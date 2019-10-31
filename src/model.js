@@ -4,7 +4,8 @@ export const Model = observable({
 
     Data:{
 
-        Facts:[]
+        Facts:[],
+        Age:0
     }
 });
 
@@ -20,9 +21,23 @@ Model.GetData = async function()  {
 }
 
 Model.GetFacts = function() {
-    return this.Data.Facts;
+    let arr = [];
+
+    this.Data.Facts.forEach(element => {
+        if (element.Age === this.Data.Age)
+        {
+            arr.push(element);
+        }
+    })
+
+    return arr;
 }
 
 Model.ShowData = function() {
     console.log(this.Data);
+}
+
+Model.SetAge = function (val) {
+
+    this.Data.Age = val;
 }

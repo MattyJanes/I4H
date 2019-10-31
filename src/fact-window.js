@@ -15,7 +15,6 @@ export class FactWindow extends Component {
     //Every component has a render function which must return something
     render() {
         
-        
         return (
 
             <div className='factWindow'>

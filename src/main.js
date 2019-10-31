@@ -11,6 +11,11 @@ import { observer } from 'mobx-react';
 
 export const ObsApp = observer(class App extends Component {
 
+	ageSet = (value) => {
+
+		this.props.model.SetAge(value);
+	}
+
 	//All react components have a render method which must return something
 	render() {
 
@@ -18,7 +23,7 @@ export const ObsApp = observer(class App extends Component {
 
 		return (
 			<div className='appjs'>
-				<AgeTracker />
+				<AgeTracker setAge={this.ageSet}/>
 				<ol>
 					{facts.map ((value, key) =>
 						<FactWindow key={key} fact={value.Preview} />)}

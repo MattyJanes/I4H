@@ -42,7 +42,7 @@ export class App extends Component {
 
 					<Route exact path='/' render={props => <Splash {...props}/>}/>
 
-					<Route exact path='/main' render={(props) => <ObsApp model={Model} {...props}/>}/>
+					<Route exact path='/main' render={(props) => <ObsApp age={this.state.ChildAge} model={Model} {...props}/>}/>
 
 				</Switch>
 
