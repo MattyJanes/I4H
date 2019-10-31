@@ -1,0 +1,20 @@
+{"AppSchemaVersion":1,
+"Facts":
+[
+    {"Category":"Dental", "Age":"6","Preview":"Preview1, Dental, 6 Months", "Fact":"Full fact 1 for Dental, 6 Months old"},
+    {"Category":"Dental", "Age":"6","Preview":"Preview2, Dental, 6 Months", "Fact":"Full fact 2 for Dental, 6 Months old"},
+    {"Category":"Dental", "Age":"6","Preview":"Preview3, Dental, 6 Months", "Fact":"Full fact 3 for Dental, 6 Months old"},
+    {"Category":"Dental", "Age":"12","Preview":"Preview1, Dental, 12 Months", "Fact":"Full fact 1 for Dental, 12 Months old"},
+    {"Category":"Dental", "Age":"12","Preview":"Preview2, Dental, 12 Months", "Fact":"Full fact 2 for Dental, 12 Months old"},
+    {"Category":"Dental", "Age":"12","Preview":"Preview3, Dental, 12 Months", "Fact":"Full fact 3 for Dental, 12 Months old"},
+    {"Category":"Mental", "Age":"6","Preview":"Preview1, Mental, 6 Months", "Fact":"Full fact 1 for Mental, 6 Months old"},
+    {"Category":"Mental", "Age":"6","Preview":"Preview2, Mental, 6 Months", "Fact":"Full fact 2 for Mental, 6 Months old"},
+    {"Category":"Mental", "Age":"6","Preview":"Preview3, Mental, 6 Months", "Fact":"Full fact 3 for Mental, 6 Months old"},
+    {"Category":"Mental", "Age":"12","Preview":"Preview1, Mental, 12 Months", "Fact":"Full fact 1 for Mental, 12 Months old"},
+    {"Category":"Mental", "Age":"12","Preview":"Preview2, Mental, 12 Months", "Fact":"Full fact 2 for Mental, 12 Months old"},
+    {"Category":"Mental", "Age":"12","Preview":"Preview3, Mental, 12 Months", "Fact":"Full fact 3 for Mental, 12 Months old"},
+    {"Category":"Other", "Age":"6","Preview":"Preview1, Other, 6 Months", "Fact":"Full fact 1 for Other, 6 Months old"},
+    {"Category":"Other", "Age":"6","Preview":"Preview2, Other, 6 Months", "Fact":"Full fact 2 for Other, 6 Months old"},
+    {"Category":"Other", "Age":"6","Preview":"Preview3, Other, 6 Months", "Fact":"Full fact 3 for Other, 6 Months old"}
+]
+}

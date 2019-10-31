@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900&display=swap");
+
+body {
+    margin:0px;
+}
+
+.appjs {
+    background-color: #e0e0e0;
+}
+
+ol{
+    padding-inline-start: 0px;
+}
+
+div.factWindow {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background: #ffffff;
+}
