@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { clearInterval } from 'timers';
+import { observer } from 'mobx-react';
+import * as mobx from 'mobx';
 
 //
 //RatingWindow
@@ -10,16 +13,58 @@ import React, { Component } from 'react';
 //addlike - Callback for parent
 //
 
-export class FactWindow extends Component {
+export const FactWindow = observer(class FactWindow extends Component {
+
+    constructor(props) {
+
+        super(props);
+        this.state = {idx:0};
+    }
+
+    tick() {
+
+        if (this.props.factList.length > 0)
+        {
+            if (this.state.idx + 1 >= 5)
+            {
+                this.setState({idx:0});
+            }
+            else
+            {
+                this.setState({idx:this.state.idx + 1} );
+            }
+        }
+    }
+
+    componentDidMount() {
+
+        this.interval = setInterval(() => this.tick(), 1000)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
 
     //Every component has a render function which must return something
     render() {
         
-        return (
+        if (this.props.factList.length > 0)
+        {
+            return (
 
-            <div className='factWindow'>
-                <div>{this.props.fact}</div>
-            </div>
-        )
+                <div className='factWindow'>
+                    <div className='factWindowText'>{this.props.factList[this.state.idx].Preview}</div>
+                </div>
+            )
+        }
+        else
+        {
+            return (
+
+                <div className='factWindow'>
+                    <div className='factWindowText'>Please enter your childs age in moths to get relevant facts!</div>
+                </div>
+            )
+        }
     }
-}
+})

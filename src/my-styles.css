@@ -13,13 +13,29 @@ ol{
 }
 
 div.factWindow {
-    margin: auto;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     background: #ffffff;
+}
+
+div.factWindowText {
+    margin: 0.5rem;
+    font-size: 0.7rem;
+    font-family: 'Roboto', 'sans-serif';
+    color: #606060;
+}
+
+input.ageTracker {
+    text-align: center;
+    bottom: 2rem;
+    align-self: center;
+    position: fixed;
 }

@@ -12,7 +12,7 @@ export class AgeTracker extends Component {
     render() {
 
         return (
-            <input type="number" onBlur={this.OnBlur} />
+            <input className='ageTracker' type="number" onBlur={this.OnBlur} />
         )
     }
 }
