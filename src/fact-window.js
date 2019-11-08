@@ -20,7 +20,7 @@ export const FactWindow = observer(class FactWindow extends Component {
         super(props);
         this.state = {idx:0};
         this.Timer=null;
-    }
+        }
 
     tick() {
 
@@ -43,12 +43,12 @@ export const FactWindow = observer(class FactWindow extends Component {
     }
 
     componentWillUnmount() {
-        this.Timer = null;
+
+        this.Timer=null;
     }
 
     //Every component has a render function which must return something
     render() {
-        
 
         if (!this.props.Age)
         {
@@ -74,7 +74,7 @@ export const FactWindow = observer(class FactWindow extends Component {
             return (
 
                 <div onClick={this.props.function} className='factWindow'>
-                    <div className='factWindowText'>There are no available facts for that age category. Sorry!</div>
+                    <div className='factWindowText'>Please enter your childs age in moths to get relevant facts!</div>
                 </div>
             )
         }
