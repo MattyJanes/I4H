@@ -23,13 +23,18 @@ export const ObsApp = observer(class App extends Component {
 		this.forceUpdate();
 	}
 
+	FWClick = () => {
+
+		this.props.history.push('/fact-categories')
+	}
+
 	//All react components have a render method which must return something
 	render() {
 
 		return (
 			<div className='appjs'>
 				<AgeTracker setAge={this.ageSet}/>
-				<FactWindow setAge={this.ageSet} factList={this.facts} />
+				<FactWindow function={this.FWClick} Age={this.props.model.GetAge()} factList={this.facts} />
 			</div>
 		)
 	}
