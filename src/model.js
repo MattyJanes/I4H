@@ -41,8 +41,3 @@ Model.SetAge = function (val) {
 
     this.Data.Age = val;
 }
-
-Model.GetAge = function () {
-
-    return this.Data.Age;
-}

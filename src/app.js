@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Splash } from './splash.js';
 import { ObsApp } from './main.js';
-import { FactCategories } from './fact-categories.js';
 
 //App
 //
@@ -36,8 +35,6 @@ export class App extends Component {
 					<Route exact path='/' render={props => <Splash {...props}/>}/>
 
 					<Route exact path='/main' render={(props) => <ObsApp model={Model} {...props}/>}/>
-
-					<Route exact path='/fact-categories' render={(props) => <FactCategories model={Model} {...props}/>}/>
 
 				</Switch>
 
