@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { clearInterval } from 'timers';
 import { observer } from 'mobx-react';
-import * as mobx from 'mobx';
 
 //
 //RatingWindow
