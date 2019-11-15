@@ -46,3 +46,15 @@ Model.GetAge = function () {
 
     return this.Data.Age;
 }
+
+Model.GetCategories = function () {
+
+    let arr=[];
+
+    this.Data.Facts.forEach(element => {
+        if (!arr.includes(element.Category) && element.Age === this.Data.Age)
+            arr.push(element.Category);
+    })
+
+    return arr;
+}

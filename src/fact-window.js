@@ -62,7 +62,7 @@ export const FactWindow = observer(class FactWindow extends Component {
         {
             return (
 
-                <div className='factWindow'>
+                <div onClick={this.props.function} className='factWindow'>
                     <div className='factWindowText'>{this.props.factList[this.state.idx].Preview}</div>
                 </div>
             )
