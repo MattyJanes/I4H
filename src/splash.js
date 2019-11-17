@@ -26,7 +26,7 @@ export class Splash extends Component {
         return (
             <div>
                 <h1>
-                    Welcome to the [NAME PENDING] splash page.
+                    Welcome to the Connect-Kid splash page.
                 </h1>
 
                 <h1>
